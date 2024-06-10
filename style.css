@@ -1,0 +1,69 @@
+.横並びA {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	& .列 {
+		background-color: orange;
+		width: 80px;
+	}
+}
+.横並びB {
+	display: flex;
+	justify-content: space-between;
+	& .広い列 {
+		background-color: lightblue;
+		width: 240px;
+	}
+	& .狭い列 {
+		background-color: lightgreen;
+		width: 120px;
+	}
+}
+
+.演習並び{
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+	& .演習列{
+		width: 100px;
+		padding: 10px;
+		border-style: solid;
+		border-color: gray;
+	}
+	& .演習画像{
+		width: 100%;
+		display: block;
+	}
+	& .演習見出し{
+		font-weight: bold;
+		font-size: 18px;
+	}
+	& .演習文章{
+		font-size: 12px;
+	}
+}
+
+
+.動物横並び {
+	display: flex;
+	justify-content: space-between;
+	
+	& .動物 {
+		width: 100px;
+		border: 1px solid black;
+		padding: 10px 10px 10px 10px;
+		
+		& .動物画像 {
+			width: 100%;
+		}
+
+		& .動物名 {
+			font-size: 20px;
+			font-weight: bold;
+		}
+		
+		& .説明文 {
+			font-size: 12px;
+		}
+	}
+}
